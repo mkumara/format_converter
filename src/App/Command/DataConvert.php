@@ -9,6 +9,8 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
+use App\Model\Factory\DataReaderFactory;
+use App\Model\Factory\DataConverterFactory;
 
 /**
  * 
@@ -45,6 +47,11 @@ EOF
         }
         
         $output->writeln("Converting: '$file' to $format");
+
+        $reader = DataReaderFactory::getReader($format, $file);
+        $converter = DataConverterFactory::getConverter($format);
+
+        var_dump($reader);
         
         $convertedData = "set this variable to the converted data";
         
