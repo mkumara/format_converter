@@ -1,0 +1,16 @@
+<addresses>
+    <address>
+        <address1>123 test &amp; Lane</address1>
+        <address2></address2>
+        <city>Dallas</city>
+        <stateAbbr>TX</stateAbbr>
+        <postalCode>75044</postalCode>
+    </address>
+    <address>
+        <address1>598 Null St</address1>
+        <address2>apt 5</address2>
+        <city>Houston</city>
+        <stateAbbr>TX</stateAbbr>
+        <postalCode>75854</postalCode>
+    </address>
+</addresses>

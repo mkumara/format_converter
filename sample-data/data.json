@@ -1,0 +1,18 @@
+{
+    "addresses": [
+        {
+            "address1": "123 test & Lane",
+            "address2": "",
+            "city": "Dallas",
+            "stateAbbr": "TX",
+            "postalCode": "75044"
+        },
+        {
+            "address1": "598 Null St",
+            "address2": "apt 5",
+            "city": "Houston",
+            "stateAbbr": "TX",
+            "postalCode": "75854"
+        }
+    ]
+}

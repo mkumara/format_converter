@@ -1,0 +1,41 @@
+# Test Instructions
+The code in this directory contains a skeleton console application. You must
+write enough code to achieve the following requirements:
+
+1) Given a properly formatted xml or json input file, print (console) the data 
+   in the specified output format (xml|json). There are two sample input files
+   to use in the sample-data directory. The data is a collection of Addresses. 
+   There can be 0 or more Addresses in the collection.
+
+2) The application is run using these commands:
+   php console.php data-convert sample-data/data.xml -o json
+   php console.php data-convert sample-data/data.json -o xml
+
+3) The console output should contain line breaks and indentation for readability.
+
+4) Although this test is limited to json and xml formats, the application should
+   be easily extended to allow other formats (csv, yaml, etc).
+
+5) Add or edit as many php files as needed. Do not rename any existing file. Do 
+   not modify the example json/xml files. 
+
+6) When completed, zip the directory (exclude the vendor directory) and submit
+   the zip file for evaluation.
+
+## Requirements
+Internet Connection
+PHP 7.1 cli (if not available, use the optional Docker environment described below)
+
+## Set up the environment
+After extracting the zip file, install the vendor libraries:
+php composer.phar install
+
+## Optional Docker Environment
+The steps below will allow you to create the Docker container which can be used  
+to execute this code. If you do not wish to use the Docker container, skip this 
+section. Run these commands from this project's root directory.
+
+Replace the "/full/path/to" with your actual full path to the project's root directory
+cd /full/path/to/PHPDataTest
+docker build -t php-data-test .
+docker run -v /full/path/to/PHPDataTest:/var/www/html -it php-data-test bash
